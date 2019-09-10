@@ -18,7 +18,7 @@ def escherSignedHeader(host, path):
     return signed_headers
 
 signed_headers = escherSignedHeader(
-  host=host, path=path#, extra_headers={'Content-Type': 'application/json'}
+  host=host, path=path
 )
 response = requests.get(url, headers=signed_headers)
 
